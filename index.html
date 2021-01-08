@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+  </head>
+
+  <body>
+    <!-- Tìm số nguyên dương nhỏ nhất  -->
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <div class="card">
+            <div class="card-header">
+              <label>Số nguyên dương nhỏ nhất </label>
+            </div>
+            <div class="card-body">
+              <label> 1 + 2 + … + n > 10000</label>
+              <form>
+                <button
+                  id="btnTinhSoNguyenDuong"
+                  type="button"
+                  class="btn btn-success"
+                >
+                  Kết quả
+                </button>
+              </form>
+            </div>
+            <div id="bt1Footer" class="card-footer"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <br />
+
+    <!-- chương trình nhập vào 2 số x, n  -->
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <div class="card">
+            <div class="card-header">
+              <label
+                >Viết chương trình nhập vào 2 số x, n <br />
+                Tính tổng: S(n) = x + x^2 + x^3 + … + x^n
+              </label>
+            </div>
+            <div class="card-body">
+              <div>
+                <label>Nhập x:</label>
+                <input id="txtSoX" type="number" />
+              </div>
+              <div>
+                <label>Nhập n:</label>
+                <input id="txtSoN" type="number" />
+              </div>
+              <form>
+                <button
+                  onclick="tongphuongtrinh(event)"
+                  type="submit"
+                  id="btnTongPhuongTrinh"
+                  type="button"
+                  class="btn btn-success"
+                >
+                  Kết quả
+                </button>
+              </form>
+            </div>
+            <div id="bt2Footer" class="card-footer"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <br />
+
+    <!--  Tính giai thừa 1*2*...n-->
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <div class="card">
+            <div class="card-header">
+              <label
+                >Nhập vào n. <br />
+                Tính giai thừa 1*2*...n
+              </label>
+            </div>
+            <div class="card-body">
+              <div>
+                <label>Nhập n:</label>
+                <input id="txtGiaiThua" type="number" />
+              </div>
+              <form>
+                <button type="button" id="btnGiaiThua" class="btn btn-success">
+                  Kết quả
+                </button>
+              </form>
+            </div>
+            <div id="bt3Footer" class="card-footer"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <br />
+
+    <!-- Hãy viết chương trình khi click vào button sẽ in ra 10 thẻ div. Nếu div nào vị trí chẵn thì background màu đỏ và lẻ thì background màu xanh.
+
+  -->
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <div class="card">
+            <div class="card-header">
+              <label
+                >Chương trình khi click vào button sẽ in ra 10 thẻ div.
+                <br />Nếu div nào vị trí chẵn thì background màu đỏ và lẻ thì
+                background màu xanh.</label
+              >
+            </div>
+            <div class="card-body">
+              <form>
+                <button
+                  type="button"
+                  onclick="taoTheDiv()"
+                  id="btnTaoTheDiv"
+                  class="btn btn-success"
+                >
+                  Kết quả
+                </button>
+              </form>
+            </div>
+            <div id="bt4Footer" class="card-footer"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <script src="./main.js"></script>
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
